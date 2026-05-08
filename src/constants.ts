@@ -68,7 +68,7 @@ export const DEFAULT_SETTINGS: AppSettings = {
       },
       order: {
         leverage: 5,
-        positionRatio: 50,
+        positionRatio: 40,
         maxPosition: 40000,
         tpModeBuy: 'amp',
         tpModeSell: 'amp',
@@ -168,7 +168,7 @@ export const DEFAULT_SETTINGS: AppSettings = {
       },
       order: {
         leverage: 5,
-        positionRatio: 50,
+        positionRatio: 40,
         maxPosition: 40000,
         tpModeBuy: 'amp',
         tpModeSell: 'amp',
@@ -207,7 +207,7 @@ export const DEFAULT_SETTINGS: AppSettings = {
     },
     {
       id: "2",
-      name: "buy5",
+      name: "buy8",
       enabled: true,
       isMasterAccount: false,
       binance: {
@@ -254,7 +254,7 @@ export const DEFAULT_SETTINGS: AppSettings = {
           cooldown: 0,
           preferredMode: 'amp',
           conditions: {
-            amp: { enabled: true, range: [5, 30] },
+            amp: { enabled: true, range: [8, 30] },
             longShort: { enabled: true, buyEnabled: true, buy: 80, sellEnabled: false, sell: 20 },
             m: { enabled: true, range: [2980000, 1000000000] },
             fundingRateOptimization: { enabled: true, windowMinutes: 5, shortThreshold: -0.3 },
@@ -268,7 +268,7 @@ export const DEFAULT_SETTINGS: AppSettings = {
       },
       order: {
         leverage: 5,
-        positionRatio: 50,
+        positionRatio: 40,
         maxPosition: 40000,
         tpModeBuy: 'amp',
         tpModeSell: 'amp',
