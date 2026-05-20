@@ -436,7 +436,7 @@ export default function App() {
     setIsTransferring(true);
     setTransferStatus(null);
     try {
-      const res = await fetch('/api/transfer/to-futures', {
+      const res = await fetch(`/api/transfer/to-futures?accountId=${selectedAccountId}`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ amount })
